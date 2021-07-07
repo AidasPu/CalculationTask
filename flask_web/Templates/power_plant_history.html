@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% include "navbar.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if power_plants is defined %}
+    {% for power_plant in power_plants %}
+        <tr>
+            <td><p id="power_output">Power output: {{ power_plant[0] }}</p></td>
+            <td><p id="initial_cell_power">Initial cell power:{{ power_plant[1] }}</p></td>
+            <td><p id="power_plant_name">Plant name: {{ power_plant[2] }}</p></td>
+            <td><p id="client">Client: {{ power_plant[3] }}</p></td>
+            <td><p id="time">Time took to calculate in seconds: {{ power_plant[4]}}</p></td>
+        </tr>
+        <hr>
+    {% endfor %}
+{% else %}
+    <p>You have no calculations this session.</p>
+{% endif %}
+</body>
+</html>

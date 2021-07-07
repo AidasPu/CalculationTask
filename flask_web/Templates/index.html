@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "navbar.html" %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST" , action="">
+    {{ form.hidden_tag() }}
+    {% for field in form %}
+        {% if field.widget.input_type != 'hidden' %} {{ field.label }} {% endif %}
+        {{ field }}<br>
+    {% endfor %}
+
+    <p>Initial power of cells: has to be a number or decimal</p>
+
+    <p>Input plant information: the format that this field accepts is a row of 1's (existing cell) and 0's (non existing cell)
+        Example: 1000001000001,1000001000001,100000010000001111111111111111,0000111
+        every number till comma is a row. After comma next row starts.</p>
+    <p><input type="submit" value="submit"/></p>
+</form>
+</body>
+</html>
