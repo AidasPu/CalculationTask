@@ -1,12 +1,8 @@
-# This 1, 2, 3 Task given by PVCase.
-
-This repository is private.
-
-For task info you can check "PVcase_Python_Task.pdf"
+This is cell calculation task.
 
 Task 1
 
-Task 2 using numpy. And this solution I'm using for web.
+Task 2 using numpy. And this solutionis the one I'm using for web.
 
 Task 3 is located in flask_web. Website stores past calculation history to session.
 
