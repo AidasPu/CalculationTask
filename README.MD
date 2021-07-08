@@ -6,7 +6,7 @@ For task info you can check "PVcase_Python_Task.pdf"
 
 Task 1
 
-Task 2 using numpy. And this is the code I'm using for web.
+Task 2 using numpy. And this solution I'm using for web.
 
 Task 3 is located in flask_web. Website stores past calculation history to session.
 
